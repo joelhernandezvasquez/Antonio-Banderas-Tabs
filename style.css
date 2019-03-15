@@ -1,0 +1,58 @@
+
+
+h1,h3
+{
+    margin:0px;
+    letter-spacing: 3px;
+}
+h3
+{
+    font-size: 1.3rem;
+    padding-top:10px;
+}
+
+.header
+{
+    background:black;
+    width:100%;
+    height:110px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tab-container
+{
+    width:100%;
+    height:600px;
+    background:#fdfdfd;
+    border:1px solid black;
+}
+
+ul.menu
+{
+  display:flex;
+  flex-direction: row;
+  align-content:space-between;
+  padding:5px;
+  margin:0;
+  
+
+}
+.menu li
+{
+    list-style-type: none;
+    margin:10px;
+    font-size: 1.5rem;
+  
+    
+}
+.menu a
+{
+    text-decoration: none;
+    color:#27282d;
+    background:silver;
+    padding:1px;
+}
