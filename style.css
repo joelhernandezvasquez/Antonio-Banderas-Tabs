@@ -31,6 +31,7 @@ h3
     border:1px solid black;
 }
 
+
 ul.menu
 {
   display:flex;
@@ -44,8 +45,9 @@ ul.menu
 .menu li
 {
     list-style-type: none;
-    margin:10px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-top:15px;
+    
   
     
 }
@@ -53,6 +55,32 @@ ul.menu
 {
     text-decoration: none;
     color:#27282d;
-    background:silver;
-    padding:1px;
+    background:#fdfdfd;;
+    padding:15px 17px;
+    
+}
+.tab-component
+{
+    position:relative;
+}
+.tab
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+    grid-template-areas:
+    "text-content image-container";
+
+}
+
+.text-content
+{
+    grid-area:text-content;
+    border:1px solid red;
+}
+
+.image-container
+{
+    grid-area:image-container;
+    border:1px solid blue;
 }
