@@ -1,5 +1,8 @@
 
-
+:root
+{
+    --primary-color:white;
+}
 h1,h3
 {
     margin:0px;
@@ -16,7 +19,7 @@ h3
     background:black;
     width:100%;
     height:110px;
-    color:white;
+    color:var(--primary-color);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +59,7 @@ ul.menu
     text-decoration: none;
     color:black;
     background:  #e7e6e4;
-    padding:12px 12px;
+    padding:12px 17px;
     
 }
 .tab-component
@@ -67,11 +70,13 @@ ul.menu
 .tab
 {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 500px;
     grid-gap:20px;
     grid-template-areas:
     "text-content image-container";
     margin-top:50px;
+    position:absolute;
   
     
 
@@ -85,6 +90,7 @@ ul.menu
     flex-direction: column;
     align-items: center;
     margin-left:40px;
+    padding:10px;
 
     
   
@@ -114,21 +120,38 @@ ul.menu
 {
     grid-area:image-container;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .blue-seduction
 {
   background:#173f93;
-  color:white;
+  color:var(--primary-color);
 }
 .black-seduction
 {
     background:#4a4851;
-    color:white;
+    color:var(--primary-color);
 }
 .king-seduction
 {
     background:#d1dae0;
-    color:white;
+    color:var(--primary-color);
+}
+.king-seduction-absolute
+{
+  background:#004879;
+  color:var(--primary-color);
+}
+.power-seduction
+{
+    background:#c20511;
+    color:var(--primary-color);
+}
+.miami-black-seduction
+{
+    background:#49b74f;
+    color:var(--primary-color);
+}
+.visible
+{
+    z-index: 2;
 }
